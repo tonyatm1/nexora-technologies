@@ -1,0 +1,2038 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="theme-color" content="#0A0A0B">
+
+<title>NEXORA Technologies | Build What's Next</title>
+
+<meta name="description"
+content="NEXORA Technologies builds websites, software, automation and AI solutions for businesses worldwide. Remote delivery, clear planning and practical technology.">
+<meta name="keywords" content="website development, software development, business automation, AI solutions, inventory system, web design, NEXORA Technologies">
+<meta name="robots" content="index, follow">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="NEXORA Technologies | Build What's Next">
+<meta property="og:description" content="Websites, software, automation and AI solutions for businesses worldwide.">
+<meta property="og:site_name" content="NEXORA Technologies">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="NEXORA Technologies | Build What's Next">
+<meta name="twitter:description" content="Websites, software, automation and AI solutions for businesses worldwide.">
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%230A0A0B'/%3E%3Ccircle cx='50' cy='50' r='34' fill='none' stroke='%23FF6A1A' stroke-width='6'/%3E%3Ccircle cx='50' cy='50' r='11' fill='%23FF6A1A'/%3E%3C/svg%3E">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "NEXORA Technologies",
+  "slogan": "Build What's Next",
+  "description": "Websites, software, automation and AI solutions for businesses worldwide.",
+  "email": "jarvisatmark1@gmail.com",
+  "telephone": "+917358903117",
+  "areaServed": "Worldwide",
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "telephone": "+917358903117",
+    "email": "jarvisatmark1@gmail.com",
+    "contactType": "sales",
+    "availableLanguage": ["English", "Tamil"]
+  }
+}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;700&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap">
+
+<style>
+:root {
+  --bg: #0A0A0B;
+  --card: #131315;
+  --card-glass: rgba(19,19,21,.82);
+  --edge: #26262B;
+  --orange: #FF6A1A;
+  --amber: #FFB020;
+  --white: #ffffff;
+  --text: #F4F4F5;
+  --muted: #A1A1AA;
+  --ink: #0A0A0B;
+  --green: #FF6A1A;
+  --shadow: 0 18px 55px rgba(0,0,0,.45);
+  color-scheme: dark;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 90px;
+}
+
+body {
+  font-family: 'IBM Plex Sans', Arial, Helvetica, sans-serif;
+  background-color: var(--bg);
+  background-image: radial-gradient(rgba(255,106,26,.13) 1px, transparent 1.5px);
+  background-size: 30px 30px;
+  color: var(--text);
+  line-height: 1.65;
+}
+
+h1, h2, h3 {
+  font-family: 'Chakra Petch', 'IBM Plex Sans', Arial, sans-serif;
+}
+
+button, input, select, textarea {
+  font: inherit;
+}
+
+button, a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+:focus-visible {
+  outline: 2px solid var(--orange);
+  outline-offset: 3px;
+}
+
+/* full-screen animated background */
+#net {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  display: block;
+  pointer-events: none;
+}
+
+main, footer {
+  position: relative;
+  z-index: 1;
+}
+
+.container {
+  width: min(1160px, 92%);
+  margin: auto;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: rgba(10,10,11,.88);
+  backdrop-filter: blur(14px);
+  border-bottom: 1px solid var(--edge);
+}
+
+.nav {
+  min-height: 76px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: 'Chakra Petch', Arial, sans-serif;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: var(--white);
+  font-size: 20px;
+}
+
+.logo {
+  width: 43px;
+  height: 43px;
+  color: var(--orange);
+  flex-shrink: 0;
+  filter: drop-shadow(0 0 8px rgba(255,106,26,.55));
+}
+
+.brand small {
+  display: block;
+  font-family: 'IBM Plex Sans', Arial, sans-serif;
+  font-size: 10px;
+  letter-spacing: 2px;
+  color: var(--muted);
+  font-weight: 600;
+}
+
+.navlinks {
+  display: flex;
+  align-items: center;
+  gap: 23px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.navlinks a:hover {
+  color: var(--orange);
+}
+
+.navlinks a.btn:hover {
+  color: var(--ink);
+}
+
+.btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border: 1px solid var(--orange);
+  border-radius: 10px;
+  padding: 12px 19px;
+  font-weight: 600;
+  font-size: 14px;
+  transition: .2s;
+}
+
+.btn-primary {
+  background: var(--orange);
+  color: var(--ink);
+}
+
+.btn-primary:hover {
+  background: #FF7F3A;
+  box-shadow: 0 0 28px rgba(255,106,26,.5);
+  transform: translateY(-2px);
+}
+
+.btn-light {
+  background: transparent;
+  color: var(--white);
+  border-color: var(--edge);
+}
+
+.btn-light:hover {
+  border-color: var(--orange);
+  box-shadow: 0 0 22px rgba(255,106,26,.28);
+  transform: translateY(-2px);
+}
+
+.hero {
+  position: relative;
+  padding: 82px 0 70px;
+  background:
+    radial-gradient(ellipse at 88% 10%, rgba(255,106,26,.28) 0, transparent 38%);
+  overflow: hidden;
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1.2fr .8fr;
+  gap: 50px;
+  align-items: center;
+}
+
+.eyebrow {
+  display: inline-block;
+  background: rgba(255,106,26,.1);
+  color: var(--orange);
+  border: 1px solid rgba(255,106,26,.4);
+  border-radius: 30px;
+  padding: 7px 13px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: clamp(42px, 6vw, 70px);
+  line-height: 1.05;
+  letter-spacing: -1.5px;
+  color: var(--white);
+  margin-bottom: 23px;
+}
+
+.gradient-text {
+  color: var(--orange);
+  text-shadow: 0 0 40px rgba(255,106,26,.55);
+}
+
+.hero p {
+  color: var(--muted);
+  max-width: 610px;
+  font-size: 17px;
+  margin-bottom: 25px;
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.hero-note {
+  margin-top: 23px;
+  font-size: 12px;
+  color: var(--muted);
+}
+
+.hero-card {
+  padding: 30px;
+  background: var(--card-glass);
+  backdrop-filter: blur(8px);
+  border: 1px solid var(--edge);
+  border-radius: 20px;
+  box-shadow: 0 0 60px rgba(255,106,26,.16);
+  position: relative;
+}
+
+.hero-symbol {
+  width: 120px;
+  height: 120px;
+  margin: 0 auto 20px;
+  display: grid;
+  place-items: center;
+  background: rgba(255,106,26,.1);
+  border: 1px solid rgba(255,106,26,.4);
+  border-radius: 50%;
+  box-shadow: 0 0 40px rgba(255,106,26,.25);
+}
+
+.hero-symbol svg {
+  width: 95px;
+  height: 95px;
+  color: var(--orange);
+}
+
+.hero-card h3 {
+  text-align: center;
+  color: var(--white);
+  font-size: 23px;
+  margin-bottom: 5px;
+}
+
+.hero-card > p {
+  text-align: center;
+  font-size: 14px;
+  margin: 0 auto 22px;
+}
+
+.mini-list {
+  display: grid;
+  gap: 10px;
+}
+
+.mini-item {
+  padding: 12px;
+  background: rgba(255,255,255,.04);
+  border: 1px solid var(--edge);
+  border-radius: 10px;
+  display: flex;
+  gap: 10px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.mini-item span {
+  color: var(--orange);
+}
+
+/* worldwide strip */
+.world-strip {
+  border-top: 1px solid var(--edge);
+  border-bottom: 1px solid var(--edge);
+  background: rgba(19,19,21,.7);
+  backdrop-filter: blur(6px);
+}
+
+.world-inner {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 14px;
+  padding: 22px 0;
+}
+
+.world-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 13px;
+  color: var(--muted);
+}
+
+.world-item b {
+  display: block;
+  color: var(--white);
+  font-size: 14px;
+}
+
+.world-item .w-icon {
+  width: 42px;
+  height: 42px;
+  border-radius: 10px;
+  background: rgba(255,106,26,.12);
+  border: 1px solid rgba(255,106,26,.4);
+  display: grid;
+  place-items: center;
+  font-size: 19px;
+  flex-shrink: 0;
+}
+
+.section {
+  padding: 78px 0;
+}
+
+.section-soft {
+  background: rgba(19,19,21,.45);
+  border-top: 1px solid var(--edge);
+  border-bottom: 1px solid var(--edge);
+}
+
+.section-heading {
+  max-width: 720px;
+  margin: 0 auto 38px;
+  text-align: center;
+}
+
+.section-heading h2 {
+  font-size: clamp(29px, 4vw, 43px);
+  color: var(--white);
+  line-height: 1.2;
+  letter-spacing: -.5px;
+  margin: 13px 0;
+}
+
+.section-heading p {
+  color: var(--muted);
+}
+
+.section-label {
+  font-size: 11px;
+  letter-spacing: 2px;
+  font-weight: 700;
+  color: var(--orange);
+}
+
+.benefit-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+
+.benefit {
+  padding: 23px;
+  border: 1px solid var(--edge);
+  border-radius: 14px;
+  background: var(--card-glass);
+  backdrop-filter: blur(6px);
+  transition: .2s;
+}
+
+.benefit:hover {
+  border-color: var(--orange);
+  box-shadow: 0 0 30px rgba(255,106,26,.16);
+}
+
+.icon {
+  font-size: 29px;
+  margin-bottom: 13px;
+}
+
+.benefit h3 {
+  font-size: 16px;
+  margin-bottom: 8px;
+  color: var(--white);
+}
+
+.benefit p {
+  font-size: 13px;
+  color: var(--muted);
+}
+
+.search-box {
+  display: flex;
+  max-width: 620px;
+  margin: 0 auto 28px;
+  gap: 10px;
+}
+
+.search-box input {
+  width: 100%;
+  border: 1px solid var(--edge);
+  background: var(--card);
+  color: var(--white);
+  border-radius: 10px;
+  padding: 14px 17px;
+  outline: none;
+}
+
+.search-box input::placeholder {
+  color: var(--muted);
+}
+
+.search-box input:focus {
+  border-color: var(--orange);
+  box-shadow: 0 0 0 3px rgba(255,106,26,.2);
+}
+
+.solution-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 17px;
+}
+
+.solution-card {
+  border: 1px solid var(--edge);
+  border-radius: 14px;
+  background: var(--card-glass);
+  backdrop-filter: blur(6px);
+  padding: 23px;
+  display: flex;
+  flex-direction: column;
+  transition: .2s;
+}
+
+.solution-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 0 30px rgba(255,106,26,.18);
+  border-color: var(--orange);
+  background: rgba(26,26,29,.92);
+}
+
+.solution-icon {
+  width: 53px;
+  height: 53px;
+  border-radius: 12px;
+  background: rgba(255,106,26,.12);
+  border: 1px solid rgba(255,106,26,.4);
+  display: grid;
+  place-items: center;
+  font-size: 26px;
+  margin-bottom: 17px;
+}
+
+.solution-card h3 {
+  color: var(--white);
+  font-size: 18px;
+  line-height: 1.35;
+  margin-bottom: 9px;
+}
+
+.solution-card p {
+  color: var(--muted);
+  font-size: 13px;
+  margin-bottom: 17px;
+}
+
+.card-bottom {
+  margin-top: auto;
+  padding-top: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--orange);
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.text-button {
+  border: 0;
+  background: transparent;
+  color: var(--orange);
+  font-weight: 700;
+  text-align: left;
+}
+
+.empty-state {
+  display: none;
+  text-align: center;
+  padding: 25px;
+  color: var(--muted);
+}
+
+.process-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.process-step {
+  position: relative;
+  padding: 23px;
+  border-top: 3px solid var(--orange);
+  background: var(--card-glass);
+  backdrop-filter: blur(6px);
+  border-radius: 0 0 14px 14px;
+}
+
+.process-number {
+  font-family: 'Chakra Petch', Arial, sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  color: rgba(255,106,26,.45);
+}
+
+.process-step h3 {
+  font-size: 17px;
+  color: var(--white);
+  margin: 8px 0;
+}
+
+.process-step p {
+  font-size: 13px;
+  color: var(--muted);
+}
+
+.planner {
+  background:
+    radial-gradient(520px 260px at 0% 0%, rgba(255,106,26,.2), transparent 70%),
+    rgba(14,14,16,.88);
+  border: 1px solid var(--edge);
+  color: var(--white);
+  border-radius: 20px;
+  padding: 40px;
+  display: grid;
+  grid-template-columns: .85fr 1.15fr;
+  gap: 35px;
+  align-items: start;
+}
+
+.planner h2 {
+  font-size: clamp(29px, 4vw, 40px);
+  line-height: 1.15;
+  margin: 15px 0;
+}
+
+.planner p {
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.planner .section-label {
+  color: var(--amber);
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 13px;
+}
+
+.field {
+  display: grid;
+  gap: 6px;
+}
+
+.field.full {
+  grid-column: 1 / -1;
+}
+
+.field label {
+  font-size: 12px;
+  color: #D4D4D8;
+  font-weight: 600;
+}
+
+.field input,
+.field select,
+.field textarea {
+  width: 100%;
+  background: var(--bg);
+  color: var(--white);
+  border: 1px solid var(--edge);
+  border-radius: 10px;
+  padding: 12px;
+  outline: none;
+}
+
+.field input::placeholder,
+.field textarea::placeholder {
+  color: #71717A;
+}
+
+.field input:focus,
+.field select:focus,
+.field textarea:focus {
+  border-color: var(--orange);
+  box-shadow: 0 0 0 3px rgba(255,106,26,.2);
+}
+
+.field select option {
+  background: var(--card);
+  color: var(--white);
+}
+
+.field textarea {
+  resize: vertical;
+  min-height: 85px;
+}
+
+.planner .btn {
+  width: 100%;
+  margin-top: 14px;
+}
+
+.founder-grid {
+  display: grid;
+  grid-template-columns: .75fr 1.25fr;
+  gap: 40px;
+  align-items: start;
+}
+
+.founder-card {
+  padding: 30px;
+  border-radius: 20px;
+  background:
+    radial-gradient(420px 220px at 0% 0%, rgba(255,106,26,.22), transparent 70%),
+    rgba(14,14,16,.88);
+  border: 1px solid var(--edge);
+}
+
+.founder-mark {
+  width: 72px;
+  height: 72px;
+  border-radius: 16px;
+  display: grid;
+  place-items: center;
+  background: var(--orange);
+  color: var(--ink);
+  font-family: 'Chakra Petch', Arial, sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  box-shadow: 0 0 40px rgba(255,106,26,.45);
+}
+
+.founder-card h3 {
+  font-size: 25px;
+  color: var(--white);
+}
+
+.founder-card p {
+  color: var(--muted);
+  font-size: 13px;
+  margin-top: 7px;
+}
+
+.founder-copy h2 {
+  color: var(--white);
+  font-size: clamp(29px, 4vw, 41px);
+  line-height: 1.2;
+  margin: 12px 0 20px;
+}
+
+.founder-copy p {
+  margin-bottom: 15px;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.quote {
+  padding: 20px;
+  border-left: 4px solid var(--orange);
+  border-radius: 0 12px 12px 0;
+  background: rgba(255,106,26,.08);
+  color: var(--white);
+  font-weight: 600;
+  margin-top: 22px;
+}
+
+.contact-panel {
+  background:
+    radial-gradient(600px 300px at 50% 0%, rgba(255,106,26,.25), transparent 70%),
+    rgba(14,14,16,.88);
+  border: 1px solid var(--edge);
+  color: var(--white);
+  border-radius: 20px;
+  padding: 45px 25px;
+  text-align: center;
+}
+
+.contact-panel h2 {
+  font-size: clamp(30px, 4vw, 44px);
+  line-height: 1.2;
+  margin: 12px 0;
+}
+
+.contact-panel > p {
+  color: var(--muted);
+  max-width: 650px;
+  margin: 0 auto 26px;
+}
+
+.contact-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+  max-width: 860px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.contact-card {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 18px;
+  border: 1px solid var(--edge);
+  border-radius: 14px;
+  background: rgba(19,19,21,.9);
+  transition: .2s;
+  min-width: 0;
+}
+
+.contact-card:hover {
+  border-color: var(--orange);
+  box-shadow: 0 0 30px rgba(255,106,26,.2);
+  transform: translateY(-3px);
+}
+
+.contact-card .c-icon {
+  width: 46px;
+  height: 46px;
+  border-radius: 12px;
+  background: rgba(255,106,26,.12);
+  border: 1px solid rgba(255,106,26,.4);
+  display: grid;
+  place-items: center;
+  font-size: 21px;
+  flex-shrink: 0;
+}
+
+.contact-card small {
+  display: block;
+  color: var(--muted);
+  font-size: 11px;
+  letter-spacing: 1px;
+  font-weight: 600;
+}
+
+.contact-card strong {
+  display: block;
+  color: var(--white);
+  font-size: 14px;
+  overflow-wrap: anywhere;
+}
+
+.contact-note {
+  margin-top: 22px;
+  font-size: 12px;
+  color: var(--muted);
+}
+
+footer {
+  padding: 25px 0;
+  background: rgba(8,8,9,.92);
+  border-top: 1px solid var(--edge);
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.footer-inner {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+footer strong {
+  color: var(--white);
+}
+
+footer a:hover {
+  color: var(--orange);
+}
+
+.whatsapp-float {
+  position: fixed;
+  z-index: 60;
+  right: 18px;
+  bottom: calc(18px + env(safe-area-inset-bottom, 0px));
+  background: var(--orange);
+  color: var(--ink);
+  border-radius: 50px;
+  padding: 13px 17px;
+  box-shadow: 0 0 28px rgba(255,106,26,.5);
+  font-size: 13px;
+  font-weight: 700;
+  transition: .2s;
+}
+
+.whatsapp-float:hover {
+  background: #FF7F3A;
+  transform: translateY(-2px);
+}
+
+.modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,.75);
+  backdrop-filter: blur(4px);
+  z-index: 100;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 18px;
+}
+
+.modal.show {
+  display: flex;
+}
+
+.modal-box {
+  width: min(650px, 100%);
+  max-height: 88vh;
+  overflow-y: auto;
+  border-radius: 20px;
+  background: var(--card);
+  border: 1px solid var(--edge);
+  box-shadow: 0 0 60px rgba(255,106,26,.2);
+  padding: 28px;
+  position: relative;
+}
+
+.modal-close {
+  position: absolute;
+  right: 16px;
+  top: 12px;
+  border: 0;
+  background: var(--edge);
+  color: var(--white);
+  border-radius: 50%;
+  width: 38px;
+  height: 38px;
+  font-size: 23px;
+}
+
+.modal-close:hover {
+  background: var(--orange);
+  color: var(--ink);
+}
+
+.modal-box h2 {
+  color: var(--white);
+  font-size: 28px;
+  padding-right: 30px;
+  line-height: 1.25;
+  margin: 12px 0;
+}
+
+.modal-box p {
+  color: var(--muted);
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+.modal-box h3 {
+  color: var(--white);
+  font-size: 15px;
+  margin: 17px 0 7px;
+}
+
+.modal-box ul {
+  padding-left: 20px;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.modal-box li {
+  margin: 5px 0;
+}
+
+.modal-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 24px;
+}
+
+.toast {
+  position: fixed;
+  z-index: 120;
+  left: 50%;
+  bottom: calc(25px + env(safe-area-inset-bottom, 0px));
+  transform: translateX(-50%);
+  background: var(--orange);
+  color: var(--ink);
+  padding: 11px 18px;
+  border-radius: 10px;
+  display: none;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.toast.show {
+  display: block;
+}
+
+@media (max-width: 850px) {
+  .hero-grid,
+  .planner,
+  .founder-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero {
+    padding-top: 55px;
+  }
+
+  .hero-card {
+    max-width: 500px;
+    width: 100%;
+    margin: auto;
+  }
+
+  .benefit-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .solution-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .process-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .world-inner {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .contact-cards {
+    grid-template-columns: 1fr;
+    max-width: 460px;
+  }
+
+  .navlinks {
+    gap: 12px;
+  }
+
+  .navlinks a:not(.btn) {
+    display: none;
+  }
+}
+
+@media (max-width: 520px) {
+  .section {
+    padding: 57px 0;
+  }
+
+  .solution-grid,
+  .benefit-grid,
+  .process-grid,
+  .form-grid,
+  .world-inner {
+    grid-template-columns: 1fr;
+  }
+
+  .field.full {
+    grid-column: auto;
+  }
+
+  .planner {
+    padding: 25px 18px;
+  }
+
+  .hero-card {
+    padding: 22px;
+  }
+
+  .hero-actions .btn {
+    width: 100%;
+  }
+
+  .modal-box {
+    padding: 23px 18px;
+  }
+
+  .brand {
+    font-size: 17px;
+  }
+
+  .logo {
+    width: 37px;
+    height: 37px;
+  }
+
+  .nav {
+    min-height: 67px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .btn,
+  .solution-card,
+  .benefit,
+  .contact-card {
+    transition: none;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<canvas id="net" aria-hidden="true"></canvas>
+
+<header>
+  <div class="container nav">
+    <a class="brand" href="#home" aria-label="NEXORA Home">
+      <svg class="logo" viewBox="0 0 100 100" fill="none"
+           xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <circle cx="50" cy="50" r="43" stroke="currentColor" stroke-width="3"/>
+        <circle cx="50" cy="50" r="29" stroke="currentColor" stroke-width="2"/>
+        <circle cx="50" cy="50" r="8" fill="currentColor"/>
+        <g stroke="currentColor" stroke-width="4" stroke-linecap="round">
+          <path d="M50 7 L55 30 L50 38 L45 30 Z" fill="currentColor"/>
+          <path d="M50 93 L45 70 L50 62 L55 70 Z" fill="currentColor"/>
+          <path d="M7 50 L30 45 L38 50 L30 55 Z" fill="currentColor"/>
+          <path d="M93 50 L70 55 L62 50 L70 45 Z" fill="currentColor"/>
+          <path d="M20 20 L39 35 L40 42 L33 39 Z"/>
+          <path d="M80 20 L61 35 L60 42 L67 39 Z"/>
+          <path d="M20 80 L39 65 L40 58 L33 61 Z"/>
+          <path d="M80 80 L61 65 L60 58 L67 61 Z"/>
+        </g>
+      </svg>
+      <span>NEXORA<small>TECHNOLOGIES</small></span>
+    </a>
+
+    <nav class="navlinks" aria-label="Main navigation">
+      <a href="#why">Why Us</a>
+      <a href="#solutions">Solutions</a>
+      <a href="#founder">Founder</a>
+      <a href="#contact" class="btn btn-primary">Let's Talk ↗</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<section class="hero" id="home">
+  <div class="container hero-grid">
+    <div>
+      <span class="eyebrow">Working with clients worldwide</span>
+
+      <h1>
+        Build your vision.<br>
+        <span class="gradient-text">Build What's Next.</span>
+      </h1>
+
+      <p>
+        Good to have you here. Whether you're starting a business
+        or improving an existing one, NEXORA helps you explore
+        the right digital solutions, create a practical plan,
+        and take your next step with confidence.
+      </p>
+
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#solutions">Explore Solutions ↗</a>
+        <a class="btn btn-light" href="#planner">Plan My Business</a>
+      </div>
+
+      <div class="hero-note">
+        Thoughtful planning · Practical technology · Solutions built around your needs
+      </div>
+    </div>
+
+    <div class="hero-card">
+      <div class="hero-symbol">
+        <svg viewBox="0 0 100 100" fill="none" aria-hidden="true">
+          <circle cx="50" cy="50" r="43" stroke="currentColor" stroke-width="2.5"/>
+          <circle cx="50" cy="50" r="29" stroke="currentColor" stroke-width="2"/>
+          <circle cx="50" cy="50" r="8" fill="currentColor"/>
+          <g fill="currentColor">
+            <path d="M50 7 L56 31 L50 40 L44 31 Z"/>
+            <path d="M50 93 L44 69 L50 60 L56 69 Z"/>
+            <path d="M7 50 L31 44 L40 50 L31 56 Z"/>
+            <path d="M93 50 L69 56 L60 50 L69 44 Z"/>
+            <path d="M19 19 L40 34 L42 42 L34 40 Z"/>
+            <path d="M81 19 L60 34 L58 42 L66 40 Z"/>
+            <path d="M19 81 L40 66 L42 58 L34 60 Z"/>
+            <path d="M81 81 L60 66 L58 58 L66 60 Z"/>
+          </g>
+        </svg>
+      </div>
+
+      <h3>Your Idea. Our Plan.</h3>
+      <p>Technology should solve real problems, not create new ones.</p>
+
+      <div class="mini-list">
+        <div class="mini-item"><span>✓</span> Understand your business</div>
+        <div class="mini-item"><span>✓</span> Identify the right solution</div>
+        <div class="mini-item"><span>✓</span> Plan before you build</div>
+        <div class="mini-item"><span>✓</span> Grow step by step</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="world-strip">
+  <div class="container world-inner">
+    <div class="world-item"><div class="w-icon">🌍</div><div><b>Clients worldwide</b>Any country, any business</div></div>
+    <div class="world-item"><div class="w-icon">💻</div><div><b>100% remote</b>Plan, build and launch online</div></div>
+    <div class="world-item"><div class="w-icon">🕒</div><div><b>Your time zone</b>Online meetings that suit you</div></div>
+    <div class="world-item"><div class="w-icon">💬</div><div><b>Easy contact</b>WhatsApp, email or call</div></div>
+  </div>
+</div>
+
+<section class="section" id="why">
+  <div class="container">
+    <div class="section-heading">
+      <span class="section-label">WHY GO DIGITAL?</span>
+      <h2>Your business deserves to be discovered.</h2>
+      <p>
+        The right digital tools can help you present your business,
+        reach customers and organise your work more effectively.
+        We start with your needs, not a one-size-fits-all product.
+      </p>
+    </div>
+
+    <div class="benefit-grid">
+      <article class="benefit">
+        <div class="icon">🌍</div>
+        <h3>Be Discoverable</h3>
+        <p>Give potential customers an online place to learn about your business, services and contact details.</p>
+      </article>
+
+      <article class="benefit">
+        <div class="icon">🤝</div>
+        <h3>Build Trust</h3>
+        <p>Present your products, work, experience and services in a clear, professional way.</p>
+      </article>
+
+      <article class="benefit">
+        <div class="icon">⚙️</div>
+        <h3>Work Smarter</h3>
+        <p>Explore suitable systems for stock, enquiries, appointments, orders and daily records.</p>
+      </article>
+
+      <article class="benefit">
+        <div class="icon">📈</div>
+        <h3>Prepare for Growth</h3>
+        <p>Start with what you need today and plan additional features as your business develops.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section section-soft" id="solutions">
+  <div class="container">
+    <div class="section-heading">
+      <span class="section-label">EXPLORE OUR SOLUTIONS</span>
+      <h2>What can we build for you?</h2>
+      <p>
+        Explore different types of websites and business systems.
+        Select a category to understand what it does and how it may help.
+      </p>
+    </div>
+
+    <div class="search-box">
+      <input id="searchInput" type="search"
+             placeholder="Search: factory, clinic, stock, hotel..."
+             aria-label="Search solutions">
+    </div>
+
+    <div class="solution-grid" id="solutionGrid"></div>
+    <div class="empty-state" id="emptyState">
+      No matching solutions found. Try another search.
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="section-heading">
+      <span class="section-label">OUR APPROACH</span>
+      <h2>From idea to implementation.</h2>
+      <p>A clear process helps us understand your needs before development begins.</p>
+    </div>
+
+    <div class="process-grid">
+      <article class="process-step">
+        <div class="process-number">01</div>
+        <h3>We Listen</h3>
+        <p>We learn about your business, your customers, your challenges and your goals.</p>
+      </article>
+
+      <article class="process-step">
+        <div class="process-number">02</div>
+        <h3>We Plan</h3>
+        <p>We discuss suitable features, priorities, budget and a practical development roadmap.</p>
+      </article>
+
+      <article class="process-step">
+        <div class="process-number">03</div>
+        <h3>We Build</h3>
+        <p>We develop the agreed website or software around your requirements.</p>
+      </article>
+
+      <article class="process-step">
+        <div class="process-number">04</div>
+        <h3>We Launch</h3>
+        <p>We test the solution, prepare it for launch and discuss future improvements.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section section-soft" id="planner">
+  <div class="container">
+    <div class="planner">
+      <div>
+        <span class="section-label">LET'S FIND YOUR NEXT STEP</span>
+        <h2>Not sure what your business needs?</h2>
+        <p>
+          Tell us a little about your business and the problem
+          you want to solve. We'll prepare an initial enquiry
+          that you can send to NEXORA through WhatsApp or email,
+          from anywhere in the world.
+        </p>
+        <br>
+        <p>
+          No technical knowledge required. Start with your idea.
+        </p>
+      </div>
+
+      <form id="planForm">
+        <div class="form-grid">
+          <div class="field">
+            <label for="customerName">Your name</label>
+            <input id="customerName" name="name"
+                   placeholder="Enter your name" required>
+          </div>
+
+          <div class="field">
+            <label for="customerCountry">Country</label>
+            <input id="customerCountry" name="country"
+                   placeholder="Example: Singapore" required>
+          </div>
+
+          <div class="field full">
+            <label for="customerEmail">Email (optional)</label>
+            <input id="customerEmail" name="email" type="email"
+                   placeholder="you@company.com">
+          </div>
+
+          <div class="field">
+            <label for="businessType">Business type</label>
+            <select id="businessType" name="business" required>
+              <option value="">Select business</option>
+              <option>Manufacturing / Factory</option>
+              <option>Retail / Shop</option>
+              <option>Medical / Clinic</option>
+              <option>Hotel / Restaurant</option>
+              <option>Real Estate</option>
+              <option>Education</option>
+              <option>Service Business</option>
+              <option>Startup / New Idea</option>
+              <option>Other</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label for="needType">What are you looking for?</label>
+            <select id="needType" name="need" required>
+              <option value="">Choose requirement</option>
+              <option>Business website</option>
+              <option>Online store</option>
+              <option>Stock / inventory management</option>
+              <option>Customer / order management</option>
+              <option>Business automation</option>
+              <option>AI-powered solution</option>
+              <option>Business planning and consultation</option>
+              <option>Not sure yet, need guidance</option>
+            </select>
+          </div>
+
+          <div class="field full">
+            <label for="problem">Tell us about your idea or problem</label>
+            <textarea id="problem" name="problem"
+              placeholder="Example: We need a better way to track factory stock..."></textarea>
+          </div>
+        </div>
+
+        <button class="btn btn-primary" type="submit">
+          Send on WhatsApp ↗
+        </button>
+        <button class="btn btn-light" type="button" id="emailBtn">
+          Send by Email ↗
+        </button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="founder">
+  <div class="container founder-grid">
+    <aside class="founder-card">
+      <div class="founder-mark">A</div>
+      <h3>Akash</h3>
+      <p>Founder · NEXORA Technologies</p>
+      <p style="margin-top:18px;font-weight:800;color:var(--green)">
+        ENGINEERING · BUSINESS · TECHNOLOGY
+      </p>
+    </aside>
+
+    <div class="founder-copy">
+      <span class="section-label">THE STORY BEHIND NEXORA</span>
+      <h2>Every big idea begins with the courage to start.</h2>
+
+      <p>
+        My journey began with engineering and practical experience
+        in industrial operations, CNC/VMC manufacturing, retail
+        and customer service. These experiences introduced me to
+        different kinds of business challenges and the importance
+        of understanding how people work.
+      </p>
+
+      <p>
+        Over time, my curiosity grew towards websites, software,
+        automation and artificial intelligence. I started exploring
+        how technology could help businesses organise their work,
+        communicate with customers and solve everyday problems.
+      </p>
+
+      <p>
+        NEXORA Technologies represents my ambition to bring business
+        understanding and technology together. The goal is to help
+        people explore their ideas, identify practical digital
+        opportunities and move forward with a clearer plan.
+      </p>
+
+      <p>
+        I believe you do not need to know everything before you
+        begin. You need the willingness to learn, the courage to
+        start and the discipline to keep improving.
+      </p>
+
+      <div class="quote">
+        "Start where you are. Learn what you need. Build what matters.
+        Keep moving forward."
+      </div>
+
+      <p style="margin-top:20px">
+        My mission is to help businesses discover practical digital
+        solutions that fit their needs, goals and resources.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="contact">
+  <div class="container">
+    <div class="contact-panel">
+      <span class="section-label" style="color:#FFB020">
+        CONTACT NEXORA FROM ANYWHERE
+      </span>
+
+      <h2>Let's build something meaningful.</h2>
+
+      <p>
+        Have a business idea, a problem to solve or a project in mind?
+        Tell us what you want to achieve. Let's explore the right next step.
+      </p>
+
+      <div class="contact-cards">
+        <a class="contact-card" id="contactWhatsApp"
+           href="https://wa.me/917358903117?text=Hello%20NEXORA%2C%20I%20would%20like%20to%20discuss%20a%20project."
+           target="_blank" rel="noopener">
+          <div class="c-icon">💬</div>
+          <div><small>WHATSAPP</small><strong>+91 73589 03117</strong></div>
+        </a>
+
+        <a class="contact-card" id="contactEmail"
+           href="mailto:jarvisatmark1@gmail.com?subject=Project%20enquiry%20for%20NEXORA%20Technologies">
+          <div class="c-icon">✉️</div>
+          <div><small>EMAIL</small><strong>jarvisatmark1@gmail.com</strong></div>
+        </a>
+
+        <a class="contact-card" id="contactCall" href="tel:+917358903117">
+          <div class="c-icon">📞</div>
+          <div><small>CALL</small><strong>+91 73589 03117</strong></div>
+        </a>
+      </div>
+
+      <p class="contact-note">
+        Based in India · Serving clients worldwide · Online meetings in your time zone
+      </p>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="container footer-inner">
+    <div>
+      <strong>NEXORA Technologies</strong><br>
+      Build What's Next.
+    </div>
+    <div>
+      <a href="mailto:jarvisatmark1@gmail.com">jarvisatmark1@gmail.com</a><br>
+      <a href="tel:+917358903117">+91 73589 03117</a>
+    </div>
+    <div>© <span id="year"></span> NEXORA Technologies. All rights reserved.</div>
+  </div>
+</footer>
+
+<a class="whatsapp-float"
+   href="https://wa.me/917358903117?text=Hello%20NEXORA%2C%20I%20would%20like%20to%20discuss%20a%20project."
+   target="_blank" rel="noopener">
+  WhatsApp ↗
+</a>
+
+<div class="modal" id="solutionModal"
+     role="dialog" aria-modal="true"
+     aria-labelledby="modalTitle">
+  <div class="modal-box">
+    <button class="modal-close" id="modalClose"
+            aria-label="Close details">×</button>
+
+    <div class="solution-icon" id="modalIcon">💻</div>
+    <span class="section-label">SOLUTION OVERVIEW</span>
+    <h2 id="modalTitle"></h2>
+    <p id="modalDescription"></p>
+
+    <h3>Why might your business need this?</h3>
+    <p id="modalBenefit"></p>
+
+    <h3>Possible features</h3>
+    <ul id="modalFeatures"></ul>
+
+    <h3>Example use case</h3>
+    <p id="modalExample"></p>
+
+    <h3>Who might use it?</h3>
+    <p id="modalAudience"></p>
+
+    <div class="modal-actions">
+      <button class="btn btn-primary" id="copySummary">
+        Copy Solution Summary
+      </button>
+      <a class="btn btn-light" id="modalWhatsApp"
+         target="_blank" rel="noopener">
+        Enquire on WhatsApp ↗
+      </a>
+      <a class="btn btn-light" id="modalEmail">
+        Enquire by Email ↗
+      </a>
+    </div>
+  </div>
+</div>
+
+<div class="toast" id="toast" role="status"></div>
+
+<script>
+const WHATSAPP_NUMBER = "917358903117";
+const CONTACT_EMAIL = "jarvisatmark1@gmail.com";
+
+const solutions = [
+  {
+    icon: "🏠",
+    title: "Real Estate & Property",
+    description: "Showcase properties, projects, rental listings and property services online.",
+    benefit: "Customers can explore available properties and contact your team without relying only on physical visits.",
+    features: [
+      "Property listings and image galleries",
+      "Price, location and property details",
+      "Enquiry and site-visit request forms",
+      "Agent contact information"
+    ],
+    example: "A property agency website where customers browse homes and request a site visit.",
+    audience: "Real estate agents, builders, property consultants and rental businesses."
+  },
+  {
+    icon: "🏥",
+    title: "Medical & Clinic",
+    description: "Present clinic information and organise selected patient-facing activities.",
+    benefit: "Patients can find clinic details more easily, while suitable systems can help organise appointments.",
+    features: [
+      "Doctor and service profiles",
+      "Opening hours and location",
+      "Appointment request forms",
+      "Patient record systems, when securely developed"
+    ],
+    example: "A clinic website with doctor profiles and an appointment request facility.",
+    audience: "Clinics, doctors, diagnostic centres and healthcare providers."
+  },
+  {
+    icon: "🏭",
+    title: "Industrial & Manufacturing",
+    description: "Present factory capabilities, industrial products and manufacturing services.",
+    benefit: "Potential customers can understand your capabilities and send structured business enquiries.",
+    features: [
+      "Product and service catalogue",
+      "Machine and production capability details",
+      "Quotation request forms",
+      "Customer enquiry management"
+    ],
+    example: "A manufacturing website where customers submit specifications for a quotation.",
+    audience: "Factories, component manufacturers, fabrication units and industrial suppliers."
+  },
+  {
+    icon: "📦",
+    title: "Inventory & Stock",
+    description: "Track products, stock movements and inventory records through a suitable system.",
+    benefit: "A well-designed inventory system can reduce manual recordkeeping and make stock levels easier to review.",
+    features: [
+      "Product and item records",
+      "Stock-in and stock-out entries",
+      "Low-stock notifications",
+      "Stock reports and search"
+    ],
+    example: "A shop or warehouse records incoming items and outgoing orders in one system.",
+    audience: "Shops, warehouses, distributors and manufacturing businesses."
+  },
+  {
+    icon: "💎",
+    title: "Jewellery & Retail",
+    description: "Display products and help customers discover a retail business online.",
+    benefit: "Customers can explore product collections and contact the business before visiting.",
+    features: [
+      "Product galleries",
+      "Category and collection pages",
+      "Store location and contact details",
+      "Enquiry or shopping-cart options"
+    ],
+    example: "A jewellery showroom website displaying collections and booking enquiries.",
+    audience: "Jewellery shops, boutiques, retailers and speciality stores."
+  },
+  {
+    icon: "👕",
+    title: "Clothing & Fashion",
+    description: "Create an online catalogue or e-commerce storefront for clothing and fashion products.",
+    benefit: "A digital storefront can help customers explore products beyond your physical store.",
+    features: [
+      "Product photos and descriptions",
+      "Size and colour options",
+      "Shopping cart and order flow",
+      "Collection and promotional pages"
+    ],
+    example: "A clothing brand showcases its latest collection and accepts online orders.",
+    audience: "Clothing brands, boutiques, designers and fashion retailers."
+  },
+  {
+    icon: "🏘️",
+    title: "Home & Property Management",
+    description: "Organise property information, maintenance requests and selected management tasks.",
+    benefit: "Centralised records can make routine property coordination easier to follow.",
+    features: [
+      "Property and unit records",
+      "Maintenance request tracking",
+      "Resident or tenant information",
+      "Payment records and reports, if implemented"
+    ],
+    example: "An apartment management portal for maintenance requests and resident updates.",
+    audience: "Property managers, apartment associations and rental operators."
+  },
+  {
+    icon: "🧾",
+    title: "Small Business Management",
+    description: "Bring selected daily business records and operational tasks into one place.",
+    benefit: "A suitable management system can reduce scattered records and improve visibility of daily activities.",
+    features: [
+      "Customer and supplier records",
+      "Orders and task tracking",
+      "Daily summaries",
+      "Basic reports and data export"
+    ],
+    example: "A small business records orders, customers and daily transactions through a dashboard.",
+    audience: "Small businesses, distributors, service providers and local entrepreneurs."
+  },
+  {
+    icon: "🍽️",
+    title: "Hotel & Restaurant",
+    description: "Present menus, services and venue details, with optional booking or ordering features.",
+    benefit: "Customers can discover your venue and understand its offerings before visiting.",
+    features: [
+      "Menu and service pages",
+      "Table enquiry forms",
+      "Online ordering options",
+      "Location, timings and contact details"
+    ],
+    example: "A restaurant website with a menu and a table enquiry form.",
+    audience: "Restaurants, cafés, hotels, caterers and food businesses."
+  },
+  {
+    icon: "🤖",
+    title: "AI-Powered Applications",
+    description: "Explore applications that use AI APIs for specific business tasks.",
+    benefit: "A properly scoped AI feature may help with repetitive tasks, information discovery or drafting.",
+    features: [
+      "AI-assisted question answering",
+      "Document summarisation",
+      "Business information assistants",
+      "Workflow automation integrations"
+    ],
+    example: "A customer-support assistant that answers approved questions from company information.",
+    audience: "Startups and businesses with a clear use case for AI."
+  },
+  {
+    icon: "🎓",
+    title: "Education & Training",
+    description: "Share educational information, training programmes and course materials online.",
+    benefit: "Learners can find course details and access the information provided by an institution.",
+    features: [
+      "Course and trainer profiles",
+      "Registration forms",
+      "Learning materials",
+      "Student dashboards, if required"
+    ],
+    example: "A training centre website with course details and student registration.",
+    audience: "Training institutes, tutors, schools and education providers."
+  },
+  {
+    icon: "🔧",
+    title: "Service & Repair",
+    description: "Present service offerings and organise customer requests and repair jobs.",
+    benefit: "A structured request system can make it easier to track jobs and communicate status.",
+    features: [
+      "Service catalogue",
+      "Service request forms",
+      "Job status tracking",
+      "Customer and technician records"
+    ],
+    example: "A repair business tracks service requests from initial enquiry to completion.",
+    audience: "Repair centres, maintenance teams and service businesses."
+  },
+  {
+    icon: "🌐",
+    title: "Business Website & Landing Page",
+    description: "Create a professional online introduction for your company, product or service.",
+    benefit: "A focused website gives customers a central place to understand what you offer and contact you.",
+    features: [
+      "Company profile and services",
+      "Portfolio and testimonials",
+      "Contact and enquiry buttons",
+      "Mobile-friendly design"
+    ],
+    example: "A startup website that introduces the company and collects customer enquiries.",
+    audience: "Startups, freelancers, local businesses and established companies."
+  }
+];
+
+const grid = document.getElementById("solutionGrid");
+const searchInput = document.getElementById("searchInput");
+const emptyState = document.getElementById("emptyState");
+const modal = document.getElementById("solutionModal");
+
+let activeSolution = null;
+
+function renderSolutions(filter = "") {
+  const query = filter.toLowerCase().trim();
+
+  const filtered = solutions.filter(item => {
+    const searchable = [
+      item.title,
+      item.description,
+      item.benefit,
+      item.audience,
+      item.example,
+      ...item.features
+    ].join(" ").toLowerCase();
+
+    return searchable.includes(query);
+  });
+
+  grid.innerHTML = filtered.map(item => {
+    const originalIndex = solutions.indexOf(item);
+
+    return `
+      <article class="solution-card">
+        <div class="solution-icon">${item.icon}</div>
+        <h3>${item.title}</h3>
+        <p>${item.description}</p>
+        <div class="card-bottom">
+          <span>Explore solution</span>
+          <button class="text-button"
+            data-solution="${originalIndex}"
+            aria-label="View ${item.title} details">View ↗</button>
+        </div>
+      </article>
+    `;
+  }).join("");
+
+  emptyState.style.display = filtered.length ? "none" : "block";
+}
+
+function openSolution(index) {
+  const item = solutions[index];
+  if (!item) return;
+
+  activeSolution = item;
+
+  document.getElementById("modalIcon").textContent = item.icon;
+  document.getElementById("modalTitle").textContent = item.title;
+  document.getElementById("modalDescription").textContent = item.description;
+  document.getElementById("modalBenefit").textContent = item.benefit;
+  document.getElementById("modalExample").textContent = item.example;
+  document.getElementById("modalAudience").textContent = item.audience;
+
+  const featureList = document.getElementById("modalFeatures");
+  featureList.replaceChildren();
+
+  item.features.forEach(feature => {
+    const li = document.createElement("li");
+    li.textContent = feature;
+    featureList.appendChild(li);
+  });
+
+  const message =
+    `Hello NEXORA Technologies! I would like to enquire about: ${item.title}. ` +
+    `Please help me understand the suitable solution, features, estimated budget and timeline.`;
+
+  document.getElementById("modalWhatsApp").href =
+    `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
+
+  document.getElementById("modalEmail").href =
+    `mailto:${CONTACT_EMAIL}?subject=${encodeURIComponent("Enquiry: " + item.title)}&body=${encodeURIComponent(message)}`;
+
+  modal.classList.add("show");
+  document.body.style.overflow = "hidden";
+}
+
+function closeModal() {
+  modal.classList.remove("show");
+  document.body.style.overflow = "";
+}
+
+grid.addEventListener("click", event => {
+  const button = event.target.closest("[data-solution]");
+  if (button) openSolution(Number(button.dataset.solution));
+});
+
+searchInput.addEventListener("input", event => {
+  renderSolutions(event.target.value);
+});
+
+document.getElementById("modalClose").addEventListener("click", closeModal);
+
+modal.addEventListener("click", event => {
+  if (event.target === modal) closeModal();
+});
+
+document.addEventListener("keydown", event => {
+  if (event.key === "Escape") closeModal();
+});
+
+document.getElementById("copySummary").addEventListener("click", async () => {
+  if (!activeSolution) return;
+
+  const summary = [
+    `NEXORA Technologies - ${activeSolution.title}`,
+    "",
+    `Overview: ${activeSolution.description}`,
+    `Potential benefit: ${activeSolution.benefit}`,
+    `Possible features: ${activeSolution.features.join(", ")}`,
+    `Example: ${activeSolution.example}`,
+    `Potential users: ${activeSolution.audience}`,
+    "",
+    "Features and project scope depend on the client's requirements."
+  ].join("\n");
+
+  try {
+    await navigator.clipboard.writeText(summary);
+    showToast("Solution summary copied!");
+  } catch (error) {
+    const area = document.createElement("textarea");
+    area.value = summary;
+    document.body.appendChild(area);
+    area.select();
+
+    try {
+      document.execCommand("copy");
+      showToast("Solution summary copied!");
+    } catch (copyError) {
+      showToast("Copy unavailable. Please try again.");
+    }
+
+    area.remove();
+  }
+});
+
+function buildEnquiry() {
+  const name = document.getElementById("customerName").value.trim();
+  const country = document.getElementById("customerCountry").value.trim();
+  const email = document.getElementById("customerEmail").value.trim();
+  const business = document.getElementById("businessType").value;
+  const need = document.getElementById("needType").value;
+  const problem = document.getElementById("problem").value.trim();
+
+  return [
+    "Hello NEXORA Technologies!",
+    "",
+    "I would like to discuss a business solution.",
+    `Name: ${name}`,
+    `Country: ${country}`,
+    `Email: ${email || "Not provided"}`,
+    `Business type: ${business}`,
+    `Requirement: ${need}`,
+    `Idea / problem: ${problem || "Not specified yet"}`,
+    "",
+    "Please help me identify a suitable solution and initial project plan."
+  ].join("\n");
+}
+
+document.getElementById("planForm").addEventListener("submit", event => {
+  event.preventDefault();
+
+  window.open(
+    `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(buildEnquiry())}`,
+    "_blank",
+    "noopener"
+  );
+});
+
+document.getElementById("emailBtn").addEventListener("click", () => {
+  const form = document.getElementById("planForm");
+
+  if (!form.reportValidity()) return;
+
+  window.location.href =
+    `mailto:${CONTACT_EMAIL}?subject=${encodeURIComponent("Project enquiry for NEXORA Technologies")}` +
+    `&body=${encodeURIComponent(buildEnquiry())}`;
+});
+
+let toastTimer;
+
+function showToast(message) {
+  const toast = document.getElementById("toast");
+  toast.textContent = message;
+  toast.classList.add("show");
+
+  clearTimeout(toastTimer);
+  toastTimer = setTimeout(() => {
+    toast.classList.remove("show");
+  }, 2400);
+}
+
+document.getElementById("year").textContent = new Date().getFullYear();
+
+renderSolutions();
+</script>
+
+<script>
+/* Full-screen network background animation */
+(function(){
+  var cv = document.getElementById('net'), ctx = cv.getContext('2d');
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var W = 0, H = 0, dpr = Math.min(window.devicePixelRatio || 1, 2);
+  var nodes = [], pulses = [], MAXD = 140;
+  var ptr = { x: -9999, y: -9999, on: false };
+
+  function size(){
+    W = window.innerWidth; H = window.innerHeight;
+    cv.width = W * dpr; cv.height = H * dpr;
+    ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+    var n = Math.max(40, Math.min(90, Math.round(W * H / 13000)));
+    nodes = [];
+    for (var i = 0; i < n; i++){
+      var z = Math.random();
+      nodes.push({
+        x: Math.random() * W, y: Math.random() * H, z: z,
+        vx: (Math.random() - .5) * (.15 + z * .45),
+        vy: (Math.random() - .5) * (.15 + z * .45),
+        r: .7 + z * 1.9,
+        hot: Math.random() < .16
+      });
+    }
+  }
+
+  function move(e){
+    var t = e.touches ? e.touches[0] : e;
+    ptr.x = t.clientX; ptr.y = t.clientY; ptr.on = true;
+  }
+  window.addEventListener('mousemove', move, { passive: true });
+  window.addEventListener('touchstart', move, { passive: true });
+  window.addEventListener('touchmove', move, { passive: true });
+  window.addEventListener('touchend', function(){ ptr.on = false; ptr.x = ptr.y = -9999; }, { passive: true });
+  window.addEventListener('mouseout', function(){ ptr.on = false; ptr.x = ptr.y = -9999; });
+
+  function draw(){
+    ctx.clearRect(0, 0, W, H);
+    var i, j, a, b, dx, dy, d;
+    ctx.lineWidth = 1;
+    for (i = 0; i < nodes.length; i++){
+      a = nodes[i];
+      for (j = i + 1; j < nodes.length; j++){
+        b = nodes[j]; dx = a.x - b.x; dy = a.y - b.y; d = Math.sqrt(dx * dx + dy * dy);
+        if (d < MAXD){
+          ctx.strokeStyle = 'rgba(255,106,26,' + (0.3 * (1 - d / MAXD) * (0.4 + (a.z + b.z) / 2 * 0.6)) + ')';
+          ctx.beginPath(); ctx.moveTo(a.x, a.y); ctx.lineTo(b.x, b.y); ctx.stroke();
+        }
+      }
+      if (ptr.on){
+        dx = a.x - ptr.x; dy = a.y - ptr.y; d = Math.sqrt(dx * dx + dy * dy);
+        if (d < 190){
+          ctx.strokeStyle = 'rgba(255,176,32,' + (0.55 * (1 - d / 190)) + ')';
+          ctx.beginPath(); ctx.moveTo(a.x, a.y); ctx.lineTo(ptr.x, ptr.y); ctx.stroke();
+        }
+      }
+    }
+    for (i = pulses.length - 1; i >= 0; i--){
+      var p = pulses[i];
+      var x = p.a.x + (p.b.x - p.a.x) * p.t, y = p.a.y + (p.b.y - p.a.y) * p.t;
+      ctx.fillStyle = 'rgba(255,200,90,.95)';
+      ctx.shadowColor = 'rgba(255,150,40,1)'; ctx.shadowBlur = 14;
+      ctx.beginPath(); ctx.arc(x, y, 2.2, 0, 6.283); ctx.fill();
+      p.t += 0.022;
+      if (p.t >= 1) pulses.splice(i, 1);
+    }
+    for (i = 0; i < nodes.length; i++){
+      a = nodes[i];
+      ctx.fillStyle = a.hot ? 'rgba(255,176,32,.95)' : 'rgba(255,106,26,' + (0.4 + a.z * 0.5) + ')';
+      if (a.hot){ ctx.shadowColor = 'rgba(255,176,32,.9)'; ctx.shadowBlur = 12; } else { ctx.shadowBlur = 0; }
+      ctx.beginPath(); ctx.arc(a.x, a.y, a.r, 0, 6.283); ctx.fill();
+    }
+    ctx.shadowBlur = 0;
+  }
+
+  function spawn(){
+    if (pulses.length >= 14 || Math.random() > .1) return;
+    var a = nodes[(Math.random() * nodes.length) | 0], b = nodes[(Math.random() * nodes.length) | 0];
+    if (a === b) return;
+    var dx = a.x - b.x, dy = a.y - b.y;
+    if (dx * dx + dy * dy < MAXD * MAXD) pulses.push({ a: a, b: b, t: 0 });
+  }
+
+  function step(){
+    var i, n, dx, dy, d, f;
+    for (i = 0; i < nodes.length; i++){
+      n = nodes[i];
+      if (ptr.on){
+        dx = ptr.x - n.x; dy = ptr.y - n.y; d = Math.sqrt(dx * dx + dy * dy);
+        if (d < 190 && d > 1){ f = (1 - d / 190) * 0.03; n.vx += dx / d * f; n.vy += dy / d * f; }
+      }
+      n.vx *= 0.995; n.vy *= 0.995;
+      var sp = Math.sqrt(n.vx * n.vx + n.vy * n.vy);
+      if (sp < .08){ n.vx += (Math.random() - .5) * .02; n.vy += (Math.random() - .5) * .02; }
+      if (sp > 1){ n.vx /= sp; n.vy /= sp; }
+      n.x += n.vx; n.y += n.vy;
+      if (n.x < 0 || n.x > W) n.vx *= -1;
+      if (n.y < 0 || n.y > H) n.vy *= -1;
+    }
+    spawn(); draw();
+    if (!reduce) requestAnimationFrame(step);
+  }
+
+  size();
+  window.addEventListener('resize', function(){ size(); if (reduce) draw(); });
+  step();
+})();
+</script>
+
+</body>
+  </html>
